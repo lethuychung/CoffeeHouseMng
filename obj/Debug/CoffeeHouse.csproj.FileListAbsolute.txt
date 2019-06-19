@@ -1,0 +1,12 @@
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\bin\Debug\CoffeeHouse.exe.config
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\bin\Debug\CoffeeHouse.exe
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\bin\Debug\CoffeeHouse.pdb
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.csprojAssemblyReference.cache
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.fLogin.resources
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.Properties.Resources.resources
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.csproj.GenerateResource.cache
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.csproj.CoreCompileInputs.cache
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.exe
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.pdb
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.fTableManager.resources
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.fAccountProfile.resources
