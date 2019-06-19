@@ -31,5 +31,10 @@ namespace CoffeeHouse
         {
 
         }
+
+        private void TpBill_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
