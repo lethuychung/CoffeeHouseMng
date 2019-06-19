@@ -16,5 +16,20 @@ namespace CoffeeHouse
         {
             InitializeComponent();
         }
+
+        private void Panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DtgvFood_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

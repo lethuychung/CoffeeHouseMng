@@ -10,3 +10,4 @@ C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.exe
 C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.pdb
 C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.fTableManager.resources
 C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.fAccountProfile.resources
+C:\Users\lethu\source\repos\CoffeeHouseMng\CoffeeHouse\obj\Debug\CoffeeHouse.fAdmin.resources

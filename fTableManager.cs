@@ -28,5 +28,11 @@ namespace CoffeeHouse
             f.ShowDialog(); 
 
         }
+
+        private void AdminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fAdmin f = new fAdmin();
+            f.ShowDialog();
+        }
     }
 }
