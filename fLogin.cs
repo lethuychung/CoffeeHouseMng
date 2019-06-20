@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CoffeeHouse
 {
     public partial class fLogin : Form
@@ -19,10 +20,23 @@ namespace CoffeeHouse
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            fTableManager f = new fTableManager();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            String userName = txbUserName.Text;
+            String passWord = txbPassWord.Text;
+
+            {
+                if (Login(userName, passWord))
+                {
+                    fTableManager f = new fTableManager();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
+                else MessageBox.Show("User Name or Password incorrect");
+            }
+        }
+        bool Login(string userName, String Password)
+        {
+            return false;
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)

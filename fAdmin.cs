@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using CoffeeHouse.DAO;
 
 namespace CoffeeHouse
 {
@@ -15,6 +17,24 @@ namespace CoffeeHouse
         public fAdmin()
         {
             InitializeComponent();
+            LoadAccountList();
+        }
+
+        void LoadFoodList()
+        {
+            string query = "SELECT * from food";
+
+            dtgvFood.DataSource = DataProvider.Instance.ExecuteQuery(query);
+
+        }
+
+
+        void LoadAccountList()
+        {
+            string query = "EXEC USP_GetAccountByUserName @userName";
+
+            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "staff1" });
+
         }
 
         private void Panel5_Paint(object sender, PaintEventArgs e)

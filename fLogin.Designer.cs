@@ -55,6 +55,7 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogout.Location = new System.Drawing.Point(242, 121);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(75, 23);
@@ -113,7 +114,7 @@
             // 
             // txbUserName
             // 
-            this.txbUserName.Location = new System.Drawing.Point(95, 3);
+            this.txbUserName.Location = new System.Drawing.Point(95, 14);
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(260, 20);
             this.txbUserName.TabIndex = 0;
