@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeHouse.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,9 +35,9 @@ namespace CoffeeHouse
                 else MessageBox.Show("User Name or Password incorrect");
             }
         }
-        bool Login(string userName, String Password)
+        bool Login(string userName, string passWord)
         {
-            return false;
+            return AccountDAO.Instance.Login(userName, passWord);
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)

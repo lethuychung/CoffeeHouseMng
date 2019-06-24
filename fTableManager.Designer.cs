@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
+            this.cbFood = new System.Windows.Forms.ComboBox();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.btnAddFood = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountInforToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalInforToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.cbSwitchTable = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnSwitchTable = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnAddFood = new System.Windows.Forms.Button();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
-            this.cbFood = new System.Windows.Forms.ComboBox();
-            this.nmFoodCount = new System.Windows.Forms.NumericUpDown();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.btnCheckOut = new System.Windows.Forms.Button();
-            this.cbSwitchTable = new System.Windows.Forms.ComboBox();
-            this.btnSwitchTable = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -65,6 +65,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(406, 74);
             this.panel1.TabIndex = 0;
+            // 
+            // nmFoodCount
+            // 
+            this.nmFoodCount.Location = new System.Drawing.Point(322, 23);
+            this.nmFoodCount.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
+            this.nmFoodCount.Name = "nmFoodCount";
+            this.nmFoodCount.Size = new System.Drawing.Size(57, 20);
+            this.nmFoodCount.TabIndex = 3;
+            this.nmFoodCount.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // cbFood
+            // 
+            this.cbFood.FormattingEnabled = true;
+            this.cbFood.Location = new System.Drawing.Point(0, 34);
+            this.cbFood.Name = "cbFood";
+            this.cbFood.Size = new System.Drawing.Size(202, 21);
+            this.cbFood.TabIndex = 2;
+            // 
+            // cbCategory
+            // 
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(3, 7);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(199, 21);
+            this.cbCategory.TabIndex = 2;
+            // 
+            // btnAddFood
+            // 
+            this.btnAddFood.Location = new System.Drawing.Point(208, 7);
+            this.btnAddFood.Name = "btnAddFood";
+            this.btnAddFood.Size = new System.Drawing.Size(99, 48);
+            this.btnAddFood.TabIndex = 1;
+            this.btnAddFood.Text = "Add";
+            this.btnAddFood.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -96,14 +138,14 @@
             // personalInforToolStripMenuItem
             // 
             this.personalInforToolStripMenuItem.Name = "personalInforToolStripMenuItem";
-            this.personalInforToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personalInforToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.personalInforToolStripMenuItem.Text = "Personal Infor";
             this.personalInforToolStripMenuItem.Click += new System.EventHandler(this.PersonalInforToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.logOutToolStripMenuItem.Text = "Log out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.LogOutToolStripMenuItem_Click);
             // 
@@ -119,107 +161,6 @@
             this.panel3.Size = new System.Drawing.Size(403, 61);
             this.panel3.TabIndex = 0;
             // 
-            // flpTable
-            // 
-            this.flpTable.Location = new System.Drawing.Point(12, 27);
-            this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(376, 411);
-            this.flpTable.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.listView1);
-            this.panel2.Location = new System.Drawing.Point(397, 112);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(403, 248);
-            this.panel2.TabIndex = 0;
-            // 
-            // btnAddFood
-            // 
-            this.btnAddFood.Location = new System.Drawing.Point(208, 7);
-            this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(99, 48);
-            this.btnAddFood.TabIndex = 1;
-            this.btnAddFood.Text = "Add";
-            this.btnAddFood.UseVisualStyleBackColor = true;
-            // 
-            // cbCategory
-            // 
-            this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(3, 7);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(199, 21);
-            this.cbCategory.TabIndex = 2;
-            // 
-            // cbFood
-            // 
-            this.cbFood.FormattingEnabled = true;
-            this.cbFood.Location = new System.Drawing.Point(0, 34);
-            this.cbFood.Name = "cbFood";
-            this.cbFood.Size = new System.Drawing.Size(202, 21);
-            this.cbFood.TabIndex = 2;
-            // 
-            // nmFoodCount
-            // 
-            this.nmFoodCount.Location = new System.Drawing.Point(322, 23);
-            this.nmFoodCount.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
-            this.nmFoodCount.Name = "nmFoodCount";
-            this.nmFoodCount.Size = new System.Drawing.Size(57, 20);
-            this.nmFoodCount.TabIndex = 3;
-            this.nmFoodCount.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 3);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(400, 256);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // btnCheckOut
-            // 
-            this.btnCheckOut.Location = new System.Drawing.Point(301, 10);
-            this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(99, 48);
-            this.btnCheckOut.TabIndex = 1;
-            this.btnCheckOut.Text = "Pay";
-            this.btnCheckOut.UseVisualStyleBackColor = true;
-            // 
-            // cbSwitchTable
-            // 
-            this.cbSwitchTable.FormattingEnabled = true;
-            this.cbSwitchTable.Location = new System.Drawing.Point(3, 35);
-            this.cbSwitchTable.Name = "cbSwitchTable";
-            this.cbSwitchTable.Size = new System.Drawing.Size(99, 21);
-            this.cbSwitchTable.TabIndex = 2;
-            // 
-            // btnSwitchTable
-            // 
-            this.btnSwitchTable.Location = new System.Drawing.Point(3, 0);
-            this.btnSwitchTable.Name = "btnSwitchTable";
-            this.btnSwitchTable.Size = new System.Drawing.Size(99, 29);
-            this.btnSwitchTable.TabIndex = 1;
-            this.btnSwitchTable.Text = "Switch Table";
-            this.btnSwitchTable.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(155, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 29);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Discount";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(155, 38);
@@ -232,6 +173,67 @@
             0,
             0,
             0});
+            // 
+            // cbSwitchTable
+            // 
+            this.cbSwitchTable.FormattingEnabled = true;
+            this.cbSwitchTable.Location = new System.Drawing.Point(3, 35);
+            this.cbSwitchTable.Name = "cbSwitchTable";
+            this.cbSwitchTable.Size = new System.Drawing.Size(99, 21);
+            this.cbSwitchTable.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(155, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 29);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Discount";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnSwitchTable
+            // 
+            this.btnSwitchTable.Location = new System.Drawing.Point(3, 0);
+            this.btnSwitchTable.Name = "btnSwitchTable";
+            this.btnSwitchTable.Size = new System.Drawing.Size(99, 29);
+            this.btnSwitchTable.TabIndex = 1;
+            this.btnSwitchTable.Text = "Switch Table";
+            this.btnSwitchTable.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Location = new System.Drawing.Point(301, 10);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(99, 48);
+            this.btnCheckOut.TabIndex = 1;
+            this.btnCheckOut.Text = "Pay";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            // 
+            // flpTable
+            // 
+            this.flpTable.AutoScroll = true;
+            this.flpTable.Location = new System.Drawing.Point(12, 27);
+            this.flpTable.Name = "flpTable";
+            this.flpTable.Size = new System.Drawing.Size(376, 411);
+            this.flpTable.TabIndex = 2;
+            this.flpTable.Paint += new System.Windows.Forms.PaintEventHandler(this.FlpTable_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.listView1);
+            this.panel2.Location = new System.Drawing.Point(397, 112);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(403, 248);
+            this.panel2.TabIndex = 0;
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(0, 3);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(400, 256);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // fTableManager
             // 
@@ -248,12 +250,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Table Manager";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

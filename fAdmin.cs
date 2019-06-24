@@ -17,25 +17,25 @@ namespace CoffeeHouse
         public fAdmin()
         {
             InitializeComponent();
-            LoadAccountList();
+           // LoadAccountList();
         }
 
-        void LoadFoodList()
-        {
-            string query = "SELECT * from food";
+        //void LoadFoodList()
+        //{
+        //    string query = "SELECT * from food";
 
-            dtgvFood.DataSource = DataProvider.Instance.ExecuteQuery(query);
+        //    dtgvFood.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
-        }
+        //}
 
 
-        void LoadAccountList()
-        {
-            string query = "EXEC USP_GetAccountByUserName @userName";
+        //void LoadAccountList()
+        //{
+        //    string query = "EXEC USP_GetAccountByUserName @userName";
 
-            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "staff1" });
+        //    dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "staff1" });
 
-        }
+        //}
 
         private void Panel5_Paint(object sender, PaintEventArgs e)
         {

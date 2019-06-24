@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CoffeeHouse.DAO;
+using CoffeeHouse.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +17,36 @@ namespace CoffeeHouse
         public fTableManager()
         {
             InitializeComponent();
+            LoadTable(); 
         }
+        #region Method
+        void LoadTable()
+        {
+            List<Table> tableList = TableDAO.Instance.LoadTableList();
+
+            foreach(Table item in tableList)
+            {
+                Button btn = new Button() { Width = TableDAO.tableWidth, Height = TableDAO.tableHeight };
+                btn.Text = item.Name + Environment.NewLine + item.Status;
+
+                switch (item.Status)
+                {
+                    case "EMPTY":
+                        btn.BackColor = Color.Aqua;
+                        break;
+                    default:
+                        btn.BackColor = Color.Azure;
+                        break;
+
+                }
+
+
+                flpTable.Controls.Add(btn);
+            }
+        }
+        #endregion
+
+        #region Events
 
         private void LogOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -34,5 +65,11 @@ namespace CoffeeHouse
             fAdmin f = new fAdmin();
             f.ShowDialog();
         }
+
+        private void FlpTable_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
