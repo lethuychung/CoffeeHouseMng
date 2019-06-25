@@ -28,7 +28,8 @@ namespace CoffeeHouse
             {
                 Button btn = new Button() { Width = TableDAO.tableWidth, Height = TableDAO.tableHeight };
                 btn.Text = item.Name + Environment.NewLine + item.Status;
-
+                btn.Click += btn_Click;
+                btn.Tag = item;
                 switch (item.Status)
                 {
                     case "EMPTY":
@@ -44,10 +45,19 @@ namespace CoffeeHouse
                 flpTable.Controls.Add(btn);
             }
         }
+        void ShowBill(int id)
+        {
+
+        }
+
         #endregion
 
         #region Events
-
+        void btn_Click(object sender, EventArgs e)
+        {
+            int tableID = (sender as Table).ID;
+            ShowBill(tableID);
+        }
         private void LogOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
