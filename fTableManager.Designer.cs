@@ -46,7 +46,11 @@
             this.btnCheckOut = new System.Windows.Forms.Button();
             this.flpTable = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lsvBill = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodCount)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -220,22 +224,43 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.listView1);
+            this.panel2.Controls.Add(this.lsvBill);
             this.panel2.Location = new System.Drawing.Point(397, 112);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(403, 248);
             this.panel2.TabIndex = 0;
             // 
-            // listView1
+            // lsvBill
             // 
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(0, 3);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(400, 256);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
+            this.lsvBill.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.ColumnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.lsvBill.GridLines = true;
+            this.lsvBill.HideSelection = false;
+            this.lsvBill.Location = new System.Drawing.Point(0, 3);
+            this.lsvBill.Name = "lsvBill";
+            this.lsvBill.Size = new System.Drawing.Size(400, 256);
+            this.lsvBill.TabIndex = 0;
+            this.lsvBill.UseCompatibleStateImageBehavior = false;
+            this.lsvBill.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Food Name";
+            // 
+            // ColumnHeader2
+            // 
+            this.ColumnHeader2.Text = "Number";
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Price";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Total Price";
             // 
             // fTableManager
             // 
@@ -283,6 +308,10 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnSwitchTable;
         private System.Windows.Forms.Button btnCheckOut;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lsvBill;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader ColumnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
